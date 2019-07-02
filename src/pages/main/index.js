@@ -22,6 +22,8 @@ export default class Main extends Component{
       <div className="Main">
         {this.state.gamesList.map( game =>
           <Card
+          key={game.id}
+          image={game.image}
           title={game.title}
           description={game.description}
           plataforms={game.plataforms}
