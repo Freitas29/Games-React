@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import CardStyled from './cardStyled'
 import Button from '../button/'
 export default class Card extends Component {
+  constructor(props){
+    super(props);
+  }
+  
   render(){
     return(
       <CardStyled>

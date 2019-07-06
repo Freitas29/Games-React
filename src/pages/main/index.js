@@ -11,7 +11,7 @@ export default class Main extends Component{
   async componentDidMount() {
     await api.get('/v1/games')
     .then(response => {
-      this.setState({gamesList: response.data})
+      this.setState({gamesList: response.data.games})
     }).catch(error => {
       console.error("Error get games", error);
     })
