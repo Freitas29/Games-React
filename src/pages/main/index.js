@@ -61,14 +61,16 @@ export default class Main extends Component{
                     />
                 )
     return(
-      <InfiniteScroll
+      <div className="main">
+        <InfiniteScroll
           dataLength={this.state.gamesList.length}
           next={this.fetchMoreGames}
           hasMore={this.state.hasMore}
           loader={<h4>Loading...</h4>}
         >
-      {games}
-      </InfiniteScroll>
+        {games}
+        </InfiniteScroll>
+      </div>
     )
   }
 }

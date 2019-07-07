@@ -5,7 +5,11 @@
 }
 
 .main{
-  display: flex;;
+ padding: 1%; 
+}
+
+.infinite-scroll-component {
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
