@@ -2,14 +2,14 @@ import styled from 'styled-components'
 
 
 export const CardStyled = styled.div`
-  width: 33%;
-  height: auto;
+  width: 50%;
+  height: 100%;
   display:flex;
-  flex-wrap: wrap;
   overflow: hidden;
+  margin-bottom: 5px;
 
   .card-header{
-    width: 100%;
+    width: 70%;
     overflow: hidden;
   }
 
@@ -18,55 +18,65 @@ export const CardStyled = styled.div`
     border-radius: 5px;
   }
 
-  .card-body h1{
-    text-transform: uppercase;
-    font-size: 14px;
+  .card-body{
+    padding: 15px 15px;
+    width: 100%;
+    line-height: 1.5;
   }
 
-  .card-body{
-    width: 100%;
-    border-bottom: 1px solid #F0FFF1;
-    display:flex;
-    flex-wrap: wrap;
+  .card-body h1{
+    font-size: 20px;
+    color: #fff;
+    text-transform:uppercase;
   }
 
   .card-body .lead{
-    color: #3f3f3;
+    color: #aaaaaa;
     font-size: 12px;
+    font-weight: bold;
   }
 
-  .card-body p{
-    padding: 2px 2px;
-    margin: 1px 1px;
-    text-transform: uppercase;
-    font-size: 9px;
+  .card-body .card-plataforms{ 
     width: 100%;
-    color: #0a0a0a;
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  .card-body .plataforms{
-    width: 20%;
-    background-color: #5603AD;
-    padding: 5px 5px;
-    text-transform: uppercase;
-    color: white;
-    text-align: center;
-    border-radius: 8px;
-  }
-
-  .card-body .genres{
-    width: 20%;
-    padding: 5px 5px;
-    text-transform: uppercase;
-    color: white;
-    text-align: center;
-    border-radius: 8px;
-    background-color: #8367C7;
-  }
-
-  .card-footer{
+  .card-plataforms p{
+    background: #044b88;
     padding: 5px;
-    width: 50%;
+    margin: 2px 2px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    :hover{
+      cursor: pointer;
+      transform:scale(1.2,1.2);
+    }
   }
+
+  .card-body .card-genres{ 
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card-genres p{
+    background: #f3575e;
+    padding: 5px;
+    margin: 2px 2px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    :hover{
+      cursor: pointer;
+      transform:scale(1.2,1.2);
+    }
+  }
+
 `
  export default CardStyled;
